@@ -30,17 +30,17 @@
 	#Salvar o endereço do token
 	
 #Criando uma conta para esse token
-	spl-token creat-account #endereço do token#
+	spl-token creat-account $endereco_do_token
 	#Salvar o endereço da conta do token
 
 #Forjando alguns tokens
-	spl-token mint <<endereço do token>> <<quantidade>> <<endereço da conta do token>>
+	spl-token mint $endereco_do_token $quantidade $endereco_da_conta_do_token
 	
 #Verificando a conta dos tokens, observando que o balance está com a quantidade de tokens que foram forjados
 	spl-token accounts
 
 #Opcional: Pode desabilitar a criação de novos tokens
-	spl-token authorize <<endereço do token>> mint --disable
+	spl-token authorize $endereco_do_token mint --disable
 	
 #Transferindo os tokens para outra carteira
-	spl-token transfer --fund-recipient --allow-unfunded-recipient <<endereço do token>> <<quantidade>> <<endereço carteira que receberá os tokens>>
+	spl-token transfer --fund-recipient --allow-unfunded-recipient $endereco_do_token $quantidade $endereco_carteira_que_recebera_os_tokens
