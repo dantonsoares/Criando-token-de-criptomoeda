@@ -30,7 +30,7 @@
 	#Salvar o endereço do token
 	
 #Criando uma conta para esse token
-	spl-token creat-account <<endereço do token>>
+	spl-token creat-account #endereço do token#
 	#Salvar o endereço da conta do token
 
 #Forjando alguns tokens
